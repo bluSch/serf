@@ -36,7 +36,7 @@ func (c *JoinCommand) Run(args []string) int {
 	cmdFlags.BoolVar(&replayEvents, "replay", false, "replay")
 	rpcAddr := RPCAddrFlag(cmdFlags)
 	if err := cmdFlags.Parse(args); err != nil {
-		return 1
+		os.Exit(1)
 	}
 
 	addrs := cmdFlags.Args()
@@ -44,25 +44,25 @@ func (c *JoinCommand) Run(args []string) int {
 		c.Ui.Error("At least one address to join must be specified.")
 		c.Ui.Error("")
 		c.Ui.Error(c.Help())
-		return 1
+		os.Exit(1)
 	}
 
 	client, err := RPCClient(*rpcAddr)
 	if err != nil {
 		c.Ui.Error(fmt.Sprintf("Error connecting to Serf agent: %s", err))
-		return 1
+		os.Exit(1)
 	}
 	defer client.Close()
 
 	n, err := client.Join(addrs, replayEvents)
 	if err != nil {
 		c.Ui.Error(fmt.Sprintf("Error joining the cluster: %s", err))
-		return 1
+		os.Exit(1)
 	}
 
 	c.Ui.Output(fmt.Sprintf(
 		"Successfully joined cluster by contacting %d nodes.", n))
-	return 0
+	os.Exit(0)
 }
 
 func (c *JoinCommand) Synopsis() string {

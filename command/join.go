@@ -64,7 +64,8 @@ func (c *JoinCommand) Run(args []string) int {
 	c.Ui.Output(fmt.Sprintf(
 		"Successfully joined cluster by contacting %d nodes.", n))
 
-	return 0
+	os.Exit(0)
+	return 0 // TODO remove. This is required by the Command interface
 }
 
 func (c *JoinCommand) Synopsis() string {

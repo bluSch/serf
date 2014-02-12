@@ -29,7 +29,7 @@ Options:
 	return strings.TrimSpace(helpText)
 }
 
-func (c *JoinCommand) Run(args []string) int {
+func (c *JoinCommand) Run(args []string) {
 	var replayEvents bool
 
 	cmdFlags := flag.NewFlagSet("join", flag.ContinueOnError)

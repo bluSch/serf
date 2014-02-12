@@ -63,7 +63,7 @@ func (c *JoinCommand) Run(args []string) int {
 
 	c.Ui.Output(fmt.Sprintf(
 		"Successfully joined cluster by contacting %d nodes.", n))
-	os.Exit(0)
+	return
 }
 
 func (c *JoinCommand) Synopsis() string {

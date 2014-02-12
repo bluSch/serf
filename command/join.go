@@ -29,7 +29,7 @@ Options:
 	return strings.TrimSpace(helpText)
 }
 
-func (c *JoinCommand) Run(args []string) {
+func (c *JoinCommand) Run(args []string) int {
 	var replayEvents bool
 
 	cmdFlags := flag.NewFlagSet("join", flag.ContinueOnError)
@@ -63,7 +63,8 @@ func (c *JoinCommand) Run(args []string) {
 
 	c.Ui.Output(fmt.Sprintf(
 		"Successfully joined cluster by contacting %d nodes.", n))
-	return
+
+	return 0
 }
 
 func (c *JoinCommand) Synopsis() string {

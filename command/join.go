@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/mitchellh/cli"
 	"strings"
+	"os"
 )
 
 // JoinCommand is a Command implementation that tells a running Serf

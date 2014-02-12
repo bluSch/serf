@@ -3,7 +3,7 @@ package command
 import (
 	"flag"
 	"fmt"
-	"github.com/mitchellh/cli"
+	"github.com/bluSch/cli"
 	"strings"
 	"os"
 )

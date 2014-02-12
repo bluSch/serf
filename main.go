@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/mitchellh/cli"
+	"github.com/bluSch/cli"
 	"io/ioutil"
 	"log"
 	"os"

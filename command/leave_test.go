@@ -1,7 +1,7 @@
 package command
 
 import (
-	"github.com/mitchellh/cli"
+	"github.com/bluSch/cli"
 	"strings"
 	"testing"
 )

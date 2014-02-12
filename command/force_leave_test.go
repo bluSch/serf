@@ -1,9 +1,9 @@
 package command
 
 import (
-	"github.com/hashicorp/serf/serf"
-	"github.com/hashicorp/serf/testutil"
-	"github.com/mitchellh/cli"
+	"github.com/bluSch/serf/serf"
+	"github.com/bluSch/serf/testutil"
+	"github.com/bluSch/cli"
 	"strings"
 	"testing"
 	"time"

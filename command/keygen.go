@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 	"fmt"
-	"github.com/mitchellh/cli"
+	"github.com/bluSch/cli"
 	"strings"
 )
 

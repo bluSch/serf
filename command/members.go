@@ -3,8 +3,8 @@ package command
 import (
 	"flag"
 	"fmt"
-	"github.com/hashicorp/serf/command/agent"
-	"github.com/mitchellh/cli"
+	"github.com/bluSch/serf/command/agent"
+	"github.com/bluSch/cli"
 	"net"
 	"regexp"
 	"strings"

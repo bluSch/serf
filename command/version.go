@@ -3,8 +3,8 @@ package command
 import (
 	"bytes"
 	"fmt"
-	"github.com/hashicorp/serf/serf"
-	"github.com/mitchellh/cli"
+	"github.com/bluSch/serf/serf"
+	"github.com/bluSch/cli"
 )
 
 // VersionCommand is a Command implementation prints the version.

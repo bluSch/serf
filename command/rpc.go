@@ -2,7 +2,7 @@ package command
 
 import (
 	"flag"
-	"github.com/hashicorp/serf/client"
+	"github.com/bluSch/serf/client"
 )
 
 // RPCAddrFlag returns a pointer to a string that will be populated

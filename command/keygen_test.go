@@ -2,7 +2,7 @@ package command
 
 import (
 	"encoding/base64"
-	"github.com/mitchellh/cli"
+	"github.com/bluSch/cli"
 	"testing"
 )
 

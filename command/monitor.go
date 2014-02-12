@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/hashicorp/logutils"
-	"github.com/mitchellh/cli"
+	"github.com/bluSch/cli"
 	"strings"
 	"sync"
 )
